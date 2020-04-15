@@ -1,0 +1,330 @@
+/* presets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+    /* font-family: ; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.582)), url(../img/lap2.jpg) ;
+    /* width: 100vw; */
+    height: 100vh;
+    background-size: 100%;
+    /* border-radius: 50%; */
+    /* font-size: 4rem; */
+  }
+
+  .main_heading{
+      position: relative;
+      top: 5rem;
+      left: 2rem;
+      font-size: 2.5rem;
+      color: white;
+  }
+  .mobile_icon{
+      display: none;
+  }
+  .navigation {
+    /* margin-right: 2rem; */
+    display: flex;
+    justify-content: flex-end;/*shift to right*/ 
+  }
+  .active{
+    display: none;
+}
+  .nav-line {
+    font-size: 1rem;
+    list-style: none;
+    padding-bottom: 2rem;
+    margin-top: 2.5rem;
+    margin-right: 2.6rem;
+  }
+  .white-anchors{
+   color: white;
+  }
+
+  a {
+    text-decoration: none;
+    
+  }
+  li{
+      list-style: none;
+  }
+  
+  a:hover{
+    color:white;
+   
+    
+
+  }
+  .white-anchors:hover{
+      padding-bottom: 0.6rem ;
+      border-bottom-width: 0.2rem;
+      border-bottom-style: solid;
+      border-bottom-color: green;
+  }
+  .showcase{
+      position: absolute;
+      top: 12rem;
+      left: 14rem;
+  }
+ 
+
+  .btns{
+      position: relative;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color:white;
+
+  }
+
+  .btn{
+      display: inline-block;
+      color: white;
+      margin-right: 1rem;
+      padding: 0.7rem 2rem;
+      background-color: #2ecc71;
+      border-radius: 4rem;
+      border: 0.2rem solid #2ecc71;
+      font-size: 1rem;
+      transition:  transform 0.3s,color 0.3s,background-color 0.3s ;
+  }
+
+  .btn-empty{
+      color: #2ecc71;
+      background-color: transparent;
+  }
+  .btn:hover{
+      transform: scale(1.2); 
+      background-color: #2ecc71
+
+      
+  }
+  /*----------------get-food ------------------*/
+  section{
+      padding: 0 2rem;
+      margin-top: 2.5rem;
+      padding-bottom: 1rem;
+  }
+  h2{
+      /* padding-left:25rem ; */
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      font-weight: 100;
+  }
+  .mainContainer{
+      display: flex;
+      margin-top: 2rem;
+  }
+  .container{
+      /* text-align: center; */
+      padding: 0 1rem;
+  }
+  .heading-para{
+      font-size: 130%;
+      padding: 0 8rem;
+      margin-bottom: 2 rem;
+  }
+  .icon{
+      padding: 0.5rem 5rem;
+  }
+
+  h2::after{
+   display: block;
+   border-bottom: solid;
+   content:"";
+   border-width: 0.1rem;
+   color: green;
+   margin: 0px 35rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+
+  }
+
+  /* -------------app store-------------------- */
+  .app-store{
+      margin-bottom: 6rem;
+  }
+  .img-num{
+      display: flex;
+      padding: 0 2rem;
+      margin-top: 2rem;
+  }
+  .anroid-img{
+      height: 80vh;
+      margin:0 10rem;
+  }
+  .numbering{
+    margin-top: 2rem;
+
+  }
+  .comments{
+      /* display: flex; */
+      /* margin-top: 2rem; */
+  }
+  .number{
+    border-radius: 50%;
+    font-size: 180%;
+    padding-top: 0.5rem;
+    border: 0.2rem solid #2ecc71;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    float: left;
+  }
+  .clear-fix::after{
+      content: "";
+      clear: both;
+      display: table;
+  }
+  .mobile-para{
+      margin-top: 1rem;
+      /* color: black; */
+  }
+  .playstore-img-main{
+      padding-top: 6rem;
+  }
+  .playstore-img{
+      padding-right: 2rem;
+  }
+
+
+
+
+  /* -------------city-section */
+
+  .city-img-main{
+      margin-top: 2rem;
+      display: flex;
+      padding-left: 3.5rem;
+  }
+  /* .city-img-child{
+       display: flex; 
+
+  } */
+  .city-img{
+      height: 22vh;
+      margin: 2rem 1rem;
+  }
+  h3{
+      font-size: 1.7rem;
+      font-weight: lighter;
+      margin-left: 1rem;
+      margin-bottom: 1rem
+  }
+  .city-img-icon{
+      display: block;
+      padding-left: 1.4rem
+  }
+  .city-img-icon-child{
+    display: flex;
+}
+h4{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/*----------customer sector--------- */
+.feedback{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.582)), url(../img/feedback_img.jpg) ;
+    height: 80vh;
+    background-size: 100%;
+    margin-top: 3rem;
+}
+.feedback_h{
+    color: white;
+    padding-top: 4rem;
+}
+.feedback_child{
+    width: 33%;
+    display: inline-block;
+    padding: 0 2.5rem;
+    
+}
+.feedback_kot{
+    color: white;
+    font-family: fantasy;;
+}
+.feedback_para{
+    color: white;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-style: oblique;
+}
+.feedback_name{
+    color: white;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+.feedback_name_img{
+    display: flex;
+    margin-top: 0.8rem;
+
+}
+
+/* --------price CSS---------- */
+
+ .price_main{
+     background-color: rgba(220, 241, 180, 0.582);
+ }
+ .price-main-child{
+     display: inline-block;
+     padding: 0 3rem;
+     margin-top: 2rem;;
+ }
+
+ .price-card{
+    background-color: white;
+    width: 20rem;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    height: 23rem;
+    
+ }
+ .dollar{
+    color: green;
+    font-size: 3rem;
+ }
+ .permonth{
+    font-size: 1rem;
+    color: green;
+ }
+ .check{
+     margin-top: 1.5rem;
+     
+ }
+ .check-price{
+     display: flex;
+     margin: 1rem;
+ }
+
+ .check-signup{
+     background-color:green ;
+     color: white;
+     width: 10rem;
+     border-radius: 1rem;
+     height: 2rem;
+     margin: 2rem;
+ }
+
+
+ 
+ .btns-sign{
+    position: relative;
+    
+    margin-left: 25%;
+    color: white;
+}
+
+/*------- form CSS -------*/
+ .form-child{
+    padding: 0 20rem;
+ }

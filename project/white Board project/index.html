@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         *{
+            margin:0;
+            /* overflow: hidden; */
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tools">
+        <div class="pencil active">
+            <img src="./NewIcons/Black_Pencil.svg" 
+            class="tool " onclick="handletoolChange('pencil')" alt="">
+            <!-- option -->
+            <div class="pencil-options">
+                    <div class="pencil-size-view">1</div>
+                <div class="pencil-slider">
+                    <input type="range" min="1" max="60" value="5" oninput="changeSize(this.value,'pencil')">
+
+                </div>
+                <div class="pencil-colors">
+                    <div class="blue" onclick="changeColor('blue')"></div>
+                    <div class="red" onclick="changeColor('red')"></div>
+                    <div class="black" onclick="changeColor('black')"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="eraser">
+            <img src="./NewIcons/Eraser.svg" 
+            class="tool" onclick="handletoolChange('eraser')" alt="">
+            <!-- slider -->
+            <div class="eraser-options">
+                    <div class="eraser-size-view">1</div>
+                <div class="eraser-slider">
+                        <input type="range" min="1" max="60" value="5" oninput="changeSize(this.value,'eraser')">
+
+                </div> 
+            </div>
+        </div>
+
+        <div class="sticky">
+            <img src="./NewIcons/StickyNote.svg" class="tool" alt="" onclick="handletoolChange('sticky')">
+           
+        </div>
+
+        
+        <div class="imgupload">
+            <a href="" id="fileselector">
+             <img src="./NewIcons/Photo.svg" class="tool" alt="" onclick="handletoolChange('upload')">
+            </a>
+            <input type="file" name="" id="fileInput" accept="image/*">
+        </div>
+
+        <!-------------------- download--------------->
+        <div class="download">
+                <img src="./NewIcons/Download.svg" class="tool" alt="" onclick="handletoolChange('download')">
+        </div>
+
+        <!-------------------- undo--------------->
+        <div class="undo">
+                <img src="./NewIcons/Undo.svg" class="tool" alt="" onclick="handletoolChange('undo')">
+        </div>
+        <!-------------------- redo--------------->
+        <div class="redo">
+                <img src="./NewIcons/Redo.svg" class="tool" alt="" onclick="handletoolChange('redo')">
+        </div>
+    </div>
+
+    <!-- <div class="sticky-pad" onclick=""> This section add by the help of the DOM
+        <div class="nav">
+            <div class="minimize"></div>
+            <div class="close"></div>
+        </div>
+        <textarea name="" id="" cols="30" rows="10" class="writting-pad"></textarea>
+    </div>  -->
+    
+    
+    <canvas class="board">
+
+    </canvas>
+    <script>
+        var board=document.querySelector(".board");
+        // gives height of the window;
+        board.height=window.innerHeight;
+        // gives width of the window
+       board.width=window.innerWidth;
+       var ctx=board.getContext("2d");
+    </script>
+    <script src="stickyScript.js"></script>
+    <script src="tools.js"></script>
+    <script src="script.js"></script>
+    <script src="imagescript.js"></script>
+    <script src="download.js"></script>
+</body>
+</html>

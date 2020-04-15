@@ -1,0 +1,36 @@
+Arguments: 
+  /home/ayush/.nvm/versions/node/v10.16.1/bin/node /home/ayush/.yarn/bin/yarn.js init
+
+PATH: 
+  /home/ayush/.yarn/bin:/home/ayush/.config/yarn/global/node_modules/.bin:/home/ayush/.yarn/bin:/home/ayush/.yarn/bin:/home/ayush/.config/yarn/global/node_modules/.bin:/home/ayush/.yarn/bin:/home/ayush/.anaconda3/condabin:/home/ayush/.nvm/versions/node/v10.16.1/bin:/home/ayush/.local/bin:/home/ayush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/ayush/Android/android-studio/bin:/home/ayush/Android/flutter/bin:/home/ayush/Android/android-studio/bin:/home/ayush/Android/flutter/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/ayush/.yarn/lib/cli.js:136925:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1075:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

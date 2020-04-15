@@ -1,0 +1,251 @@
+.tools{
+    /* margin: 1rem; */
+   display: flex;
+   justify-content: space-evenly;
+   background-color: navajowhite;
+}
+
+.tool{
+    width: 3rem;
+}
+.active{
+    padding: 0.5rem;
+    background-color: grey;
+    border-radius: 25%;
+    
+}
+
+.pencil{
+    position:relative;
+}
+
+.pencil-options ,.eraser-options{
+    height:4rem;
+    width:8rem;
+    background-color:transparent;
+    position: absolute;
+    top: 110%;
+    left: -40px;
+}
+.pencil-slider,.eraser-slider{
+    height: 50%;
+    background-color: lightsalmon;
+    
+
+}
+.eraser-slider{
+    height: 50%;
+    background-color: lightsalmon;
+    border-radius: 0 0 1rem 1rem;
+    
+}
+
+/* ---------------slider CSS--------- */
+input[type=range] {
+    height: 1px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #B6B6B6;
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #B6B6B6;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #B6B6B6;
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #B6B6B6;
+    border: 1px solid #8A8A8A;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #B6B6B6;
+    border: 1px solid #8A8A8A;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #B6B6B6;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #B6B6B6;
+  }
+/* ---------------slider CSS--------- */
+
+
+.pencil-size-view,.eraser-size-view{
+    height: 2rem;
+    background-color: lightsalmon;
+    border-radius: 1rem 1rem 0 0;
+    padding-left: 3.5rem;
+    padding-top: 0.2rem;
+    font-size: 1.3rem
+}
+
+.pencil-colors{
+    height: 50%;
+    background-color: lightsalmon;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blue,.red,.black,.minimize,.close{
+    margin-top: 0.25rem;
+    border-radius: 50%;
+    width: 25%;
+    height: 80%;
+}
+
+.blue{
+background-color: blue;
+}
+
+
+.red{
+background-color:red;
+}
+
+.black{
+ background-color: black;
+ }
+
+ .pencil-options,.eraser-options{
+     display: none;
+ }
+ .show{
+     display: block;
+ }
+ .eraser{
+  position: relative;   
+ }
+
+ /* sticky-pad */
+ .sticky-pad{
+     position: absolute;
+     left: 40%;
+     top: 40%;
+
+ }
+ .nav{
+     height: 3rem;
+     /* width: 228px; */
+     background-color: deepskyblue;
+     display: flex;
+     justify-content: flex-end;
+     border-radius: 0 1rem 0 0
+ }
+
+ .writting-pad{
+     background-color: coral;
+     margin: 0px; 
+     width: 228px; 
+     height: 172px;
+ }
+ .minimize, .close{
+    height: 63%;
+    width: 11%;
+     border-radius:50% ;
+     margin: 0.5rem 0.3rem;
+ }
+
+ .close{
+     margin-left: 0.5rem;
+     background-color: red;
+ }
+ .minimize{
+     background-color: green;
+ }
+ #fileInput{
+     display: none;
+ }
+
+ .top{
+    width: 100%;
+    height: 2.2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #7e7e7e;
+    border-top-right-radius: 1.5rem; 
+    /* rem me doge to mst curve aiga percent me doge to ni aiga */
+}
+.img-box{
+    height: 15rem;
+    width: 16rem;
+    position: absolute;
+    left: 35rem;
+    top: 15rem;
+}
+
+
+/* .close1{
+    
+    width: 1.5rem;
+    height: 122%;
+    border-radius: 100%;
+    margin-left: .2rem;
+} */
+
+
+ 

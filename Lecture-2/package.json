@@ -1,0 +1,16 @@
+{
+  "name": "lecture-2",
+  "version": "1.0.0",
+  "main": "arrayclass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "list": "command.js",
+    "interface": "command2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

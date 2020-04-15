@@ -1,0 +1,14 @@
+{
+  "name": "lecture-1",
+  "version": "1.0.0",
+  "main": "DTB.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "makefolder": "startingNode.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

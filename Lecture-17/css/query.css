@@ -1,0 +1,42 @@
+/* large Tablets */
+@media only screen and (max-width: 1200px){
+    body{
+        /* background-color: red; */
+        display: inline-block;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 850px){
+    body{
+        /* background-color: green; */
+    }
+}
+
+/* moblie screens */
+@media only screen and (max-width: 600px){
+   
+    .mainContainer{
+        display: block;
+        /* background-color: blue; */
+
+        
+    }
+    .mobile_icon{
+        display: block;
+        margin :0 90%;
+        padding-top: 3%;
+    }
+    header{
+        width: 98vw;
+    }
+    .navigation{
+        display: none;
+    }
+    .main_heading{
+        font-size: 150%;
+        /* padding-right: -32%; */
+        margin-left: -72%
+    }
+    
+}
