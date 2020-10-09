@@ -13,14 +13,14 @@ async function fetchPage(url) {
 async function getPage() {
     console.time();
     let pages = []
-    for(let i = 1; i <= 441; i++) {
+    // for(let i = 1; i <= 441; i++) {
         
-        const data = await fetchPage(`https://www.nic.in/employee-list/page/${i}/`);
+        const data = await fetchPage(`https://www.nic.in/employee-list/page/1/`);
         const contactDetails = await getJSON(data);
         pages = [...pages, ...contactDetails];//thread operation means concatenate two array
         console.log(pages.length);
 
-    }
+    // }
 
     console.timeEnd()
     console.log("final length " + pages.length);

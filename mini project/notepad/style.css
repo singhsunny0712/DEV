@@ -1,0 +1,39 @@
+body{
+    background-image: url("./img/pic.jpg");
+    background-color: #cccccc;
+    height: 617px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.main{
+    border-style: solid;
+    height: 563px;
+    width: 950px;
+    margin-left: 46px;
+    margin-top: 41px;
+
+    
+}
+
+
+textarea {
+    height: 472px;
+    width: 948px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-style: none;
+    font-size: 44px;
+    font-family: 'Inconsolata', monospace;
+     font-family: 'Caveat', cursive;
+     color: blanchedalmond;
+  }
+
+input {
+    padding-top: 0;
+    padding-left: 0;
+    line-height: 1em; 
+    padding: 0 0 400px 0;
+ }

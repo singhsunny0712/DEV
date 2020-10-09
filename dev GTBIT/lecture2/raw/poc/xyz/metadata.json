@@ -1,0 +1,43 @@
+{
+    "isFile": false,
+    "name": "d10",
+    "children": [
+        {
+            "isFile": false,
+            "name": "d20",
+            "children": [
+                {
+                    "isFile": false,
+                    "name": "d40",
+                    "children": []
+                },
+                {
+                    "isFile": true,
+                    "oldname": "f1.txt",
+                    "newName": "i9gd8a4kb4pwduo"
+                }
+            ]
+        },
+        {
+            "isFile": false,
+            "name": "d30",
+            "children": [
+                {
+                    "isFile": false,
+                    "name": "d50",
+                    "children": []
+                },
+                {
+                    "isFile": true,
+                    "oldname": "f2.txt",
+                    "newName": "i9gd8a4kb4pwduz"
+                }
+            ]
+        },
+        {
+            "isFile": true,
+            "oldname": "f1.txt",
+            "newName": "i9gd8a4kb4pwdvj"
+        }
+    ]
+}

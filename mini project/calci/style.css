@@ -1,0 +1,60 @@
+body{
+    background-color: orange;
+}
+
+.main{
+    border-style: solid;
+     border-color: black;
+    height: 500px;
+    width: 400px;
+    border-width: 2px;
+    background-color: blue;
+    margin-left: 35%;
+    margin-top: 5%;
+    
+}
+
+
+.screen {
+    border-bottom-color: black;
+    height: 150px;
+    /* background: white; */
+    text-align: end;
+    vertical-align: bottom;
+    line-height: 218px;
+    font-size: 75px;
+}
+
+.keys{
+    height: 87.5px;;
+    background: lightcoral;
+    /* border-style: solid; */
+    /* border-color: pink; */
+    /* display: -webkit-box; */
+    /* border-color: pink;*/
+}
+
+
+
+.one, .two, .three, .plus, .four, .five, .six, .minus, .seven,.eight,.nine,.multiple,.erase,.zero,.equal,.divide {
+    height: 84px;
+    background: yellow;
+    width: 97px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    display:inline-block;
+}
+
+.line{
+    /* border-style: solid; */
+    /* border-color: black; */
+   height: 50px;
+   width: 400px;
+   /* border-width: 2px; */
+   /* background-color: blue; */
+   margin-left: 35%;
+   margin-top: 2%;
+   font-size: 30px;
+   font-family: monospace;
+}
